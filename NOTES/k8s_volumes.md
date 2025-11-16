@@ -105,9 +105,6 @@ Here is your text formatted as **Markdown (.md)**:
 **Conclusion:**  
 Without volumes or persistent storage, **MongoDB data will be lost** whenever a pod restarts, gets rescheduled, or moves to a different node.
 
-Here is your provided text converted into **Markdown (.md)** format:
-
-````md
 # Example with HostPath Volume
 
 ## mongodb-hostpath-vol.yaml
@@ -179,8 +176,6 @@ spec:
 ### Conclusion
 
 * **HostPath volumes are not recommended** for production use because of **node dependency and data inconsistency issues**.
-
-Here is your content properly formatted in **Markdown (.md)**:
 
 # NFS Volumes in Kubernetes
 
@@ -312,10 +307,10 @@ spec:
 
 ## Useful Kubernetes Commands
 
-### Force delete a ReplicaSet (or any resource)
+### Force delete a pod
 
 ```bash
-kubectl delete replicaset.apps/springapp-7c57dbf6 --force --grace-period=0
+kubectl delete pod --force --grace-period=0
 ```
 
 ### Access a running pod shell

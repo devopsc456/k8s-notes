@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mongodb-pvc
+  namespace: prod # This is correct
+spec:
+  accessModes:
+    - ReadWriteMany  # Must match the PV's access mode
+  resources:
+    requests:
+      storage: 1Gi  # Must match with PV's size or be less than the PV's size

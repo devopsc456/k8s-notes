@@ -32,7 +32,6 @@
 - PV object requests resources (memory or storage) from the NFS server.
 
 
-````md
 # Example YAML for PVC and PV
 
 ## MongoDB Pod YAML
